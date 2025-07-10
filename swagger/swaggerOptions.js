@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://taskmanagment-app-copy-production.up.railway.app/",
+        url: "http://localhost:5000",
       },
     ],
     components: {
