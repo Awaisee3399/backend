@@ -16,9 +16,8 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpecs));
 app.use("/api", require("./routes/taskRoutes"));
 app.use("/api/auth", require("./routes/authRoutes"));
 const PORT = process.env.PORT || 5000;
-// mongoose.connect(process.env.MONGO_URI); ye wala  mera b issue aa rha tha to mn ne ase kuch use kia tha
-// ten ap ka issue solve ho gya tha ? han g
-// pehle ye oper wlaa lga huwa thaa ye use kia tha but connect shi ho rha 
+// mongoose.connect(process.env.MONGO_URI); 
+
 mongoose.connect(process.env.MONGO_URI, {
     dbName: "taskdb",
     useNewUrlParser: true,
